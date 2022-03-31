@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(#28282B, gray);
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+hr {
+    border: 2px double black;
+}
+
+button {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    color: white;
+    margin-bottom: -10px;
+}
+
+canvas {
+    animation-name: border;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes border {
+    0% {border: 5px dashed white;}
+    10% {border: 5px dashed #e43737;}
+    30% {border: 5px dashed white;}
+    50% {border: 5px dashed #06af06;}
+    70% {border: 5px dashed white;}
+    90% {border: 5px dashed #2a2ae7;}
+    100% {border: 5px dashed white;}
+}
